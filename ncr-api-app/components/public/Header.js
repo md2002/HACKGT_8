@@ -26,7 +26,7 @@ export default function Header({ logs }) {
 
   return (
     <div className="bg-white">
-      <FindStoreModal modalProp={isModalOpen} toggle={toggleModal} />
+      {/* <FindStoreModal modalProp={isModalOpen} toggle={toggleModal} /> */}
       <header className="section-header shadow-sm">
         <section className="header-top border-lighter">
           <Container>
@@ -79,6 +79,6 @@ export default function Header({ logs }) {
         </section>
         <SubHeader data={data} userStore={userStore} setIsModalOpen={setIsModalOpen} isLoading={isLoading} isError={isError} />
       </header>
-    </div>
+    </div> 
   );
 }

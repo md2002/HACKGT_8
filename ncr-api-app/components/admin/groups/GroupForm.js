@@ -67,17 +67,17 @@ const GroupForm = ({ id }) => {
       .then((response) => response.json())
       .then((data) => {
         const { response } = data;
-        if (response.status != 200) {
-          setShowAlert({
-            status: response.status,
-            message: response.data.message
-          });
-        } else {
-          setShowAlert({
-            status: response.status,
-            message: 'Group successfully created'
-          });
-        }
+        // if (response.status != 200) {
+        //   setShowAlert({
+        //     status: response.status,
+        //     message: response.data.message
+        //   });
+        // } else {
+        //   setShowAlert({
+        //     status: response.status,
+        //     message: 'Group successfully created'
+        //   });
+        // }
         setVisible(true);
       });
   };

@@ -16,27 +16,27 @@ const FindStoreModal = (props) => {
     setCoordinates(props.coords);
   }
 
-  useEffect(async () => {
-    // Get locations near user.
-    const fetchData = async () => {
-      if (props.coords && coordinates.latitude) {
-        fetch(`/api/findSites?latitude=${coordinates.latitude}&longitude=${coordinates.longitude}`)
-          .then((res) => res.json())
-          .then((data) => {
-            const { response } = data;
-            setSites(response.data.pageContent);
-          });
-      } else {
-        fetch(`/api/findSites`)
-          .then((res) => res.json())
-          .then((body) => {
-            const { response } = body;
-            setSites(response.data.pageContent);
-          });
-      }
-    };
-    fetchData();
-  }, [coordinates]);
+  // useEffect(async () => {
+  //   // Get locations near user.
+  //   const fetchData = async () => {
+  //     if (props.coords && coordinates.latitude) {
+  //       fetch(`/api/findSites?latitude=${coordinates.latitude}&longitude=${coordinates.longitude}`)
+  //         .then((res) => res.json())
+  //         .then((data) => {
+  //           const { response } = data;
+  //           setSites(response.data.pageContent);
+  //         });
+  //     } else {
+  //       fetch(`/api/findSites`)
+  //         .then((res) => res.json())
+  //         .then((body) => {
+  //           const { response } = body;
+  //           setSites(response.data.pageContent);
+  //         });
+  //     }
+  //   };
+  //   fetchData();
+  // }, [coordinates]);
 
   return (
     <Modal isOpen={modalProp} toggle={toggle} size="lg">
