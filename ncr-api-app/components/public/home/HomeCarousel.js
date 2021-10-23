@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Carousel, CarouselItem, CarouselIndicators } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselIndicators, Button } from 'reactstrap';
 
 const items = [
   {
-    src: '/images/fresh-food.png',
-    altText: 'Fresh Food, Every Day',
-    caption: 'Fresh Food, Every Day',
+    src: '/images/car3.jpg',
+    altText: 'Buy Cleaner Cars, Not Cleaner Homes',
+    caption: 'Buy Cleaner Cars, Not Cleaner Homes',
     link: '/category/1f33d252'
   },
   {
-    src: '/images/kitchen-home.png',
-    altText: 'Kitchen Essentials for Your Home',
-    caption: 'Kitchen Essentials for Your Home',
+    src: '/images/car6.jpeg',
+    altText: 'Buy Cleaner Cars, Not Cleaner Homes',
+    caption: 'Buy Cleaner Cars, Not Cleaner Homes',
     link: '/category/af452ca5'
   }
 ];
@@ -45,7 +45,8 @@ const HomeCarousel = () => {
           <div className="container">
             <h3 className="inner-text">{item.caption}</h3>
             <Link href={item.link}>
-              <a className="btn btn-success">Shop Now</a>
+              <a className="btn btn-success">Try it out now!</a>
+            
             </Link>
           </div>
         </div>

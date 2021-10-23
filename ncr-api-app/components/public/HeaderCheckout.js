@@ -10,7 +10,7 @@ export default function HeaderCheckout() {
             <Row className="align-items-center">
               <Col sm="4" md="3">
                 <Link href="/">
-                  <a className="logo-text">MART</a>
+                  <a className="logo-text">Sustainable Lightning McQueen</a>
                 </Link>
               </Col>
             </Row>

@@ -17,10 +17,9 @@ function Home() {
     <Layout logs={data && data.logs ? data.logs : []}>
       <HomeCarousel />
       <main className="container my-4 flex-grow-1">
+        <HomeQuote />
         <HomeAboutCards />
         <HomeGroups isError={isError} isLoading={isLoading} userStore={userStore} data={data} />
-        <HomeQuote />
-        <HomeMap />
       </main>
     </Layout>
   );

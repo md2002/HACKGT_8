@@ -1,4 +1,4 @@
-describe('Cart', () => {
+describe('Try it out', () => {
   it('add to cart', function () {
     cy.viewport(1920, 979);
 

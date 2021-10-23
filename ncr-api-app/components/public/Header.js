@@ -47,7 +47,7 @@ export default function Header({ logs }) {
             <Row className="align-items-center">
               <Col sm="4" md="3">
                 <Link href="/">
-                  <a className="logo-text">MART</a>
+                  <a className="logo-text">Sustainable Lightning McQueen</a>
                 </Link>
               </Col>
               <Col sm="8" md="5">

@@ -6,7 +6,7 @@ const Layout = ({ logs = [], title = 'Home', children }) => {
   return (
     <div className="d-flex flex-column main-container">
       <Head>
-        <title>MART | {title}</title>
+        <title>Sustainable Lightning McQueen | {title}</title>
       </Head>
       <Header logs={logs} />
       {children}

@@ -16,7 +16,7 @@ const Footer = () => {
         <Row>
           <Col sm="12" md="4">
             <Link href="/">
-              <a className="logo-text">MART</a>
+              <a className="logo-text font-weight-bold">Sustainable Lightning McQueen</a>
             </Link>
           </Col>
           <Col sm="12" md="4">
@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li>
                 <Button color="light" onClick={startDemo} className="text-darker float-right">
-                  Start Demo
+                  Try now!
                 </Button>
               </li>
             </ul>
