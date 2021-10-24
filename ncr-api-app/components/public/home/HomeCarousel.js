@@ -44,7 +44,7 @@ const HomeCarousel = () => {
         <div className="carousel-caption d-block text-left">
           <div className="container">
             <h3 className="inner-text">{item.caption}</h3>
-            <Link href={item.link}>
+            <Link href={"ncr-api-app/pages/finalpage1.html"}>
               <a className="btn btn-success">Try it out now!</a>
             
             </Link>
